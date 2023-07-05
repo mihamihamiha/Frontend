@@ -20,11 +20,81 @@
     transform: rotate(135deg) translate(-5px, 6px);
     background: #fcb0cb; }
 
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 1000px;
+  opacity: 0.7;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    list-style: none;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: #404040;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .portrait {
+    width: 250px;
+    height: 250px;
+    background: url("../img/portrait.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 3px #fcb0cb; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #fcb0cb; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: white;
+    text-decoration: none; }
+    .menu .nav-link:hover {
+      color: #fcb0cb; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background: #415c87;
+  background: #404040;
   color: #fcb0cb;
   height: 100%;
   margin: 0;
@@ -51,7 +121,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 1rem;
     padding: 0.1rem 1rem;
-    background: rgba(68, 97, 142, 0); }
+    background: rgba(69, 69, 69, 0); }
 
 a {
   color: #000;
