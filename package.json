@@ -4,7 +4,7 @@
   "description": "Project course",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist /css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Mihaela Ionita",
   "license": "MIT",
