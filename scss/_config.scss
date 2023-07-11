@@ -1,5 +1,5 @@
 $primary-color: #404040;
-$secondary-color:#fcb0cb;
+$secondary-color: #fcb0cb;
 $show-home-image: true;
 $home-image: url(../img/background1.jpg);
 $opacityofthebackground: 0.7;
@@ -11,37 +11,37 @@ $opacityofthebackground: 0.7;
 @mixin background{
     @if $show-home-image {
         &#bg-img{
-            background:$home-image;
+            background: $home-image;
             background-repeat: no-repeat;
             background-size: cover;
-        .overlay{
-            position: absolute;
-            top: 0;
-            right:0;
-            width: 100%;
-            height: 100%;
-            background: rgba(#404040,$opacityofthebackground);
-            z-index: -1;
-        }
+            .overlay{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($primary-color, $opacityofthebackground);
+                z-index: -1;
+            }
         }
     }
         
 }
 
 @mixin mediasm{
-    @media screen and(max-width:500px){
+    @media screen and(max-width: 500px){
         @content;
     }
 }
 
 @mixin mediamd{
-    @media screen and(max-width:768px){
+    @media screen and(max-width: 768px){
         @content;
     }
 }
 
 @mixin medialr{
-    @media screen and (min-width: 769px) and (max-width:1170px){
+    @media screen and (min-width: 769px) and (max-width: 1170px){
         @content;
     }
 }

@@ -1,6 +1,6 @@
 .menu-btn {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -22,10 +22,9 @@
 
 .menu {
   position: fixed;
-  left: 0;
   top: 0;
-  width: 250%;
-  opacity: 0.7;
+  width: 100%;
+  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -43,7 +42,7 @@
     padding: 0;
     background: #2e2e2e;
     list-style: none;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
@@ -53,13 +52,13 @@
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-  .menu .portrait {
-    width: 250px;
-    height: 250px;
-    background: url("../img/portrait.jpg");
-    background-size: cover;
-    border-radius: 50%;
-    border: solid 3px #fcb0cb; }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait.jpg");
+      background-size: cover;
+      border-radius: 50%;
+      border: solid 3px #fcb0cb; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -104,7 +103,12 @@
     ul.menu-nav.show, div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 75vh; } }
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

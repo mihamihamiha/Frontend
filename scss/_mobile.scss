@@ -8,7 +8,7 @@
 
 @include mediamd{
     main{
-        align-items:center;
+        align-items: center;
         text-align: center;
 
         .lg-heading{
@@ -18,17 +18,22 @@
     }
 
     ul.menu-nav,div.menu-branding{
-        float:none;
-        width:100%;
-        min-height:0;
+        float: none;
+        width: 100%;
+        min-height: 0;
         &.show{
             transform: translate3d(0,0,0);
         }
     }
 
     .menu-nav{
-        height:75vh;
-        
+        height: 75vh;
+        transform: translate3d(-100%,0,0);
+        font-size: 24px;
+    }
+    .menu-branding{
+        height: 25vh;
+        transform: translate3d(100%,0,0);
     }
 }
 

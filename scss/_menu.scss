@@ -1,13 +1,13 @@
 .menu-btn{
     position: absolute;
-    z-index: 5;
-    right:35px;
-    top:35px;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
     cursor: pointer;
     @include easeout;
     .btn-line{
-        width:28px;
-        height:3px;
+        width: 28px;
+        height: 3px;
         margin: 0 0 5px 0;
         background: black;
         @include easeout;
@@ -19,7 +19,7 @@
                 background: $secondary-color;
             }
             &:nth-child(2){
-               opacity:0;
+               opacity: 0;
             }
             &:nth-child(3){
                 transform: rotate(135deg) translate(-5px,6px);
@@ -31,36 +31,38 @@
 
 .menu{
     position: fixed;
-    left:0;
-    top:0;
-    width: 250%;
-    opacity: 0.7;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
     visibility: hidden;
     &.show{
         visibility: visible;
     }
+
     &-branding,&-nav{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
-        float:left;
-        width:50%;
-        height:100vh;
-        overflow:hidden;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
     }
+
     &-nav
     {
         margin:0;
         padding:0;
         background: darken($primary-color,7);
         list-style: none;
-        transform: translate3d(0,100%,0);
+        transform: translate3d(0,-100%,0);
         @include easeout;
         &.show{
             transform: translate3d(0,0,0);
        }
     }
+
     &-branding{
         background: darken($primary-color,60);
         transform: translate3d(0,100%,0);
@@ -69,14 +71,14 @@
             transform: translate3d(0,0,0);
        }
 
-    }
-    .portrait{
-        width: 250px;
-        height: 250px;
-        background: url('../img/portrait.jpg');
-        background-size: cover;
-        border-radius: 50%;
-        border:solid 3px $secondary-color;
+        .portrait{
+            width: 250px;
+            height: 250px;
+            background: url('../img/portrait.jpg');
+            background-size: cover;
+            border-radius: 50%;
+            border:solid 3px $secondary-color;
+        }
     }
 
     .nav-item{
@@ -86,19 +88,20 @@
             transform: translate3d(0,0,0);
        }
        &.current > a{
-        color:$secondary-color;
+        color: $secondary-color;
        }
     }
+
     .nav-link{
         display: inline-block;
         position: relative;
         font-size: 20px;
-        padding:1rem 0;
+        padding: 1rem 0;
         font-weight: 300;
-        color:white;
+        color: white;
         text-decoration: none;
         &:hover{
-            color:$secondary-color;
+            color: $secondary-color;
         }
     }
 }
