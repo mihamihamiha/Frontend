@@ -13,8 +13,8 @@ $opacityofthebackground: 0.7;
         background: $home-image;
         background-attachment: fixed;
         background-size: cover;
-  
         &:after {
+            content: '';
           position: absolute;
           top: 0;
           right: 0;
