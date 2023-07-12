@@ -112,6 +112,18 @@ body {
       height: 100%;
       background: rgba(64, 64, 64, 0.7);
       z-index: -1; }
+  body#bg-img2 {
+    background: url(../img/cutie2.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+  body#bg-img3 {
+    background: url(../img/babybaby2.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+  body#bg-img4 {
+    background: url(../img/swim.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
   body .text-secondary {
     color: #fcb0cb; }
 

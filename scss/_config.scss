@@ -2,6 +2,9 @@ $primary-color: #404040;
 $secondary-color: #fcb0cb;
 $show-home-image: true;
 $home-image: url(../img/background1.jpg);
+$home-image2: url(../img/cutie2.jpg);
+$home-image3: url(../img/babybaby2.jpg);
+$home-image4: url(../img/swim.jpg);
 $opacityofthebackground: 0.7;
 
 @mixin easeout{
@@ -23,6 +26,36 @@ $opacityofthebackground: 0.7;
             background: rgba($primary-color, $opacityofthebackground);
             z-index: -1;
         }
+      }
+    }
+  }
+  @mixin background2 {
+    @if $show-home-image {
+      &#bg-img2 {
+        background: $home-image2;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    }
+  }
+
+  @mixin background3 {
+    @if $show-home-image {
+      &#bg-img3 {
+        background: $home-image3;
+        background-attachment: fixed;
+        background-size: cover;
+
+      }
+    }
+  }
+
+  @mixin background4 {
+    @if $show-home-image {
+      &#bg-img4 {
+        background: $home-image4;
+        background-attachment: fixed;
+        background-size: cover;
       }
     }
   }
