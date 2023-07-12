@@ -163,7 +163,7 @@ main {
     border: #fcb0cb 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -171,9 +171,10 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #fcb0cb;
+    background: url("../img/opaqueduck.jpg");
+    background-size: cover;
     padding: 0.5rem;
-    border-bottom: #f84e8a 5px solid; }
+    border-bottom: #6b4279 5px solid; }
 
 #main-footer {
   text-align: center;

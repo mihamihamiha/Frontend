@@ -83,7 +83,7 @@ main{
 
     .bio{
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .job-1{
@@ -99,9 +99,10 @@ main{
     }
 
     .job{
-        background: $secondary-color;
+        background: url('../img/opaqueduck.jpg');
+        background-size: cover;
         padding: 0.5rem;
-        border-bottom: darken($secondary-color,20) 5px solid;
+        border-bottom: darken(#A170B1,20) 5px solid;
     }
 
 }
