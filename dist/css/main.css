@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #2e2e2e;
+    background: #0d0d0d;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/prtrait.jpg");
       background-size: cover;
       border-radius: 50%;
       border: solid 3px #fcb0cb; }
@@ -164,7 +164,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3' 'job4 job5 job6';
   grid-template-columns: 1fr 1fr 1fr; }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -174,16 +174,68 @@ main {
     border-radius: 50%;
     border: #fcb0cb 3px solid; }
   .about-info .bio {
+    background: #caa7b1;
+    background-size: cover;
     grid-area: bio;
-    font-size: 1rem; }
+    padding: 0.5rem;
+    border-bottom: #6b4279 5px solid;
+    font-size: 1rem;
+    transition: all 0.5s ease-out; }
+    .about-info .bio:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .bio:hover span {
+        color: #000; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    transition: all 0.5s ease-out; }
+    .about-info .job-1:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .job-1:hover span {
+        color: #000; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    transition: all 0.5s ease-out; }
+    .about-info .job-2:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .job-2:hover span {
+        color: #000; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job3;
+    transition: all 0.5s ease-out; }
+    .about-info .job-3:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .job-3:hover span {
+        color: #000; }
+  .about-info .job-4 {
+    grid-area: job4;
+    transition: all 0.5s ease-out; }
+    .about-info .job-4:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .job-4:hover span {
+        color: #000; }
+  .about-info .job-5 {
+    grid-area: job5;
+    transition: all 0.5s ease-out; }
+    .about-info .job-5:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .job-5:hover span {
+        color: #000; }
+  .about-info .job-6 {
+    grid-area: job6;
+    transition: all 0.5s ease-out; }
+    .about-info .job-6:hover {
+      background: #fcb0cb;
+      color: #000; }
+      .about-info .job-6:hover span {
+        color: #000; }
   .about-info .job {
-    background: url("../img/opaqueduck.jpg");
+    background: #caa7b1;
     background-size: cover;
     padding: 0.5rem;
     border-bottom: #6b4279 5px solid; }
@@ -281,7 +333,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
   .portrait {
-    background: url("../img/smallportrait.jpg");
+    background: url("../img/prtrait.jpg");
     width: 150px;
     height: 150px; }
   .about-info {

@@ -72,7 +72,8 @@ main{
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 'bioimage bio bio'
-    'job1 job2 job3';
+    'job1 job2 job3'
+    'job4 job5 job6';
     grid-template-columns: 1fr 1fr 1fr;
 
     .bio-image{
@@ -85,24 +86,97 @@ main{
     }
 
     .bio{
+        background: rgb(202, 167, 177);
+        background-size: cover;
         grid-area: bio;
+        padding: 0.5rem;
+        border-bottom: darken(#A170B1,20) 5px solid;
         font-size: 1rem;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
     }
 
     .job-1{
         grid-area: job1;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
+        
     }
 
     .job-2{
         grid-area: job2;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
     }
 
     .job-3{
         grid-area: job3;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+
+    .job-4{
+        grid-area: job4;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+
+    .job-5{
+        grid-area: job5;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+
+    .job-6{
+        grid-area: job6;
+        @include easeout;
+        &:hover{
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color: set-text-color($secondary-color);
+            }
+        }
     }
 
     .job{
-        background: url('../img/opaqueduck.jpg');
+        background:rgb(202, 167, 177);
         background-size: cover;
         padding: 0.5rem;
         border-bottom: darken(#A170B1,20) 5px solid;
