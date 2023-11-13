@@ -121,7 +121,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
   body#bg-img4 {
-    background: url(../img/swim.jpg);
+    background: url(../img/wideduck.jpg);
     background-attachment: fixed;
     background-size: cover; }
   body .text-secondary {
@@ -243,7 +243,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px; }
+  grid-gap: 30px; }
   .projects img {
     width: 100%;
     border: 3px #000 solid; }
@@ -281,7 +281,7 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    background: url("../img/wideduck.jpg");
+    background: #2c2c29;
     background-size: cover;
     font-family: 2rem;
     border: 3px #000 solid;
@@ -306,7 +306,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

@@ -187,7 +187,7 @@ main{
 .projects{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
     img{
         width: 100%;
         border: 3px #000 solid;
@@ -238,7 +238,7 @@ main{
     margin-top: 1rem;
 
     div{
-        background: url('../img/wideduck.jpg');
+        background: rgb(44, 44, 41);
         background-size: cover;
         font-family: 2rem;
         border: 3px #000 solid;
